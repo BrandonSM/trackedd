@@ -13,7 +13,7 @@
   <body>
 
     <!-- application container -->
-    <div class="container-flud">
+    <div class="container-fluid">
       <h1>Trackedd</h1>
       <h3>Simple.Time.Tracking</h3>
 
@@ -45,9 +45,8 @@
         <tr>
           <td><h1>TASK NAME</h1><span style="float:left;width:50%;">Start Time</span><span style="float:right;width:50%;">Stop Time</span><div style="clear:both;"></div></td>
           <td>Data</td>
-          <td>Data</td>
-          <td><button class="btn btn-primary">Stop</button></td>
-          <td><button class="btn btn-red">X</button></td>
+          <td><button class="btn btn-primary btn-lg">Stop</button></td>
+          <td><button class="btn btn-danger btn-lg">X</button></td>
         </tr>
       </tbody>
 
