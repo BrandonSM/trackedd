@@ -39,7 +39,19 @@
       </div>
 
       <hr>
-    <table class="table table-bordered"></table>
+    <table class="table table-bordered">
+
+      <tbody>
+        <tr>
+          <td><h1>TASK NAME</h1><span style="float:left;width:50%;">Start Time</span><span style="float:right;width:50%;">Stop Time</span><div style="clear:both;"></div></td>
+          <td>Data</td>
+          <td>Data</td>
+          <td><button class="btn btn-primary">Stop</button></td>
+          <td><button class="btn btn-red">X</button></td>
+        </tr>
+      </tbody>
+
+    </table>
     </div>
 
     <!-- load jquery -->
