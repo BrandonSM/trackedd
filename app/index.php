@@ -1,3 +1,4 @@
+<?php include('functions.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,7 +14,7 @@
   <body>
 
     <!-- application container -->
-    <div class="container-fluid">
+    <div class="container-flud">
       <h1>Trackedd</h1>
       <h3>Simple.Time.Tracking</h3>
 
@@ -33,7 +34,7 @@
            <input class="form-control" placeholder="What're you up to?">
           </div>
           <div class="col-xs-2">
-            <button type="submit" class="btn btn-block btn-success">Start</button>
+          <button type="submit" class="btn btn-block btn-success"><?php echo(i('play')); ?></button>
           </div>
         </form>
       </div>
@@ -45,8 +46,9 @@
         <tr>
           <td><h1>TASK NAME</h1><span style="float:left;width:50%;">Start Time</span><span style="float:right;width:50%;">Stop Time</span><div style="clear:both;"></div></td>
           <td>Data</td>
-          <td><button class="btn btn-primary btn-lg">Stop</button></td>
-          <td><button class="btn btn-danger btn-lg">X</button></td>
+          <td>Data</td>
+          <td><button class="btn btn-primary"><?php echo(i('stop')); ?></button></td>
+          <td><button class="btn btn-red"><?php echo(i('times')); ?></button></td>
         </tr>
       </tbody>
 
