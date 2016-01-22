@@ -29,9 +29,9 @@
       </header>
 
       <div class="row">
-        <form>
+        <form id="form-new">
           <div class="col-xs-10">
-           <input class="form-control" placeholder="What're you up to?">
+           <input id="task" class="form-control" placeholder="What're you up to?">
           </div>
           <div class="col-xs-2">
           <button type="submit" class="btn btn-block btn-success"><?php echo(i('play')); ?></button>
@@ -58,6 +58,8 @@
     <!-- load jquery -->
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 
+    <!-- application javascript  -->
+    <script src="trackedd.js"></script>
     <!-- latest compiled and minified js -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
