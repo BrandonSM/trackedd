@@ -35,7 +35,7 @@
       <div class="row">
         <form id="form-new">
           <div class="col-xs-10">
-           <input id="task" class="form-control" placeholder="What're you up to?">
+           <input id="task" name="task" class="form-control" placeholder="What're you up to?">
           </div>
           <div class="col-xs-2">
           <button type="submit" class="btn btn-block btn-success"><?php echo(i('play')); ?></button>
@@ -44,19 +44,12 @@
       </div>
 
       <hr>
-    <table class="table table-bordered">
-
-      <tbody>
-        <tr>
-          <td><h1>TASK NAME</h1><span style="float:left;width:50%;">Start Time</span><span style="float:right;width:50%;">Stop Time</span><div style="clear:both;"></div></td>
-          <td>Data</td>
-          <td>Data</td>
-          <td><button class="btn btn-lg btn-primary"><?php echo(i('stop')); ?></button></td>
-          <td><button class="btn btn-lg btn-red"><?php echo(i('times')); ?></button></td>
-        </tr>
-      </tbody>
-
-    </table>
+    <div class="container-fluid">
+          <div class="task-name"><h1>TASK NAME</h1><span style="float:left;width:50%;">Start Time</span><span style="float:right;width:50%;">Stop Time</span></div>
+          <div class="button"><button class="btn btn-lg btn-primary"><?php echo(i('stop')); ?></button></div>
+          <div class="button"><button class="btn btn-lg btn-red"><?php echo(i('times')); ?></button></div>
+      <div style="clear:both;"></div>
+    </div>
     </div>
 
     <!-- load jquery -->

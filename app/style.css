@@ -11,14 +11,29 @@ body {
 
   font-family: 'Josefin Sans', sans-serif !important;
   color: #CFCFCF !important;
-  font-size:18pt !important;
+  font-size:24pt !important;
+}
+.container-fluid {
+  display:flexbox;
 }
 
 h1 {
+  padding:0 !important;
+  margin:0 !important;
   font-family: 'Josefin Sans', sans-serif !important;
-  font-size:36pt;
+  font-size:48pt !important;
 }
 
 h3 {
-  font-size:24pt;
+  font-size:36pt !important;
+}
+
+.task-name {
+  float:left;
+  width:50%;
+}
+
+.button {
+  float:left;
+  width:10%;
 }
