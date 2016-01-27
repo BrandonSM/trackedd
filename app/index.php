@@ -45,11 +45,22 @@
       </div>
 
       <hr>
-    <div class="container-fluid">
+
+    <?php
+      $data = file_get_contents('data.json');
+
+      $array = json_decode($data, true);
+    ?>
+    <div class="container">
+    <?php $data = file_get_contents('data.json');
+          $array = json_decode($data, true);
+
+          foreach ($array as $task) { ?>
           <div class="task-name"><h1>TASK NAME</h1><span style="float:left;width:50%;">Start Time</span><span style="float:right;width:50%;">Stop Time</span></div>
           <div class="button"><button class="btn btn-lg btn-primary"><?php echo(i('stop')); ?></button></div>
           <div class="button"><button class="btn btn-lg btn-red"><?php echo(i('times')); ?></button></div>
       <div style="clear:both;"></div>
+      <?php } ?>
     </div>
     </div>
 
